@@ -38,58 +38,36 @@ class ContentListing(zeit.cms.browser.listing.Listing):
 
     css_class = 'contentListing hasMetadata content_listing'
 
-    tuples1 = zeit.cms.browser.listing.Listing.columns[0:5]
-    tuples2 = (
-        zeit.cms.browser.listing.GetterColumn(
+    columns = (
+        zeit.cms.browser.listing.Listing.columns[0:5] +
+        (zeit.cms.browser.listing.GetterColumn(
             _('Supertitle'),
             name='supertitle',
-            getter=lambda t, c: t.supertitle),
-            )
-    tuples3 = zeit.cms.browser.listing.Listing.columns[5:7]
-    tuples4 = zeit.cms.browser.listing.Listing.columns[8:9]
-    tuples5 = (
-            CheckColumn(
+            getter=lambda t, c: t.supertitle),) +
+        zeit.cms.browser.listing.Listing.columns[5:6] +
+        (zeit.cms.browser.listing.GetterColumn(
+            _('Ressort'),
+            name='ressort',
+            getter=lambda t, c: t.printRessort),) +
+        zeit.cms.browser.listing.Listing.columns[8:9] +
+        (CheckColumn(
                 _('Urgent'),
                 name='urgent',
-                getter=lambda t, c: t.urgent),
+                getter=lambda t, c: t.workflow.urgent),
             CheckColumn(
                 _('status-seo-optimized'),
                 name='seo-optimized',
-                getter=lambda t, c: t.seo_optimized),
-        )
-    tuples6 = zeit.cms.browser.listing.Listing.columns[8:10]
-
-    tuples7 = (
-        CheckColumn(
+                getter=lambda t, c: t.workflow.seo_optimized),) +
+        zeit.cms.browser.listing.Listing.columns[8:10] +
+        (CheckColumn(
             _('Teaserimage'),
             name='teaserimage',
-            getter=lambda t, c: t.teaserimage),
-            )
-
-    tuples8 = zeit.cms.browser.listing.Listing.columns[10:]
-
-    columns = tuples1 + tuples2 + tuples3 + tuples4 + tuples5 + tuples6 + tuples7 + tuples8
-
-    @property
-    def contentTable(self):
-        """Returns table listing contents"""
-        formatter = zc.table.table.FormFullFormatter(
-            self.context, self.request, self.content,
-            columns=self.columns)
-        formatter.cssClasses['table'] = self.css_class
-        return formatter
-
-    def __call__(self):
-        zope.interface.alsoProvides(
-            self.request, zeit.content.volume.browser.interfaces.ITocLayer)
-        return super(ContentListing, self).__call__()
+            getter=lambda t, c: t.teaserimage is not None),) +
+        zeit.cms.browser.listing.Listing.columns[10:]
+    )
 
 
 class ContentListRepresentation(object):
-
-    @zope.cachedescriptors.property.Lazy
-    def supertitle(self):
-        return self.context.supertitle
 
     @zope.cachedescriptors.property.Lazy
     def ressort(self):

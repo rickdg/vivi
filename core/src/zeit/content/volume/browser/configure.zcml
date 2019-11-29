@@ -39,7 +39,6 @@
     />
 
    <adapter factory=".admin.render_publish_action" name="render" />
-   <adapter factory=".commonmetadata.CommonMetadataContentListRepresentation" />
 
    <browser:page
     for="..interfaces.IVolume"
