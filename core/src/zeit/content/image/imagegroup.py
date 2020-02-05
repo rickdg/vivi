@@ -37,6 +37,9 @@ INVALID_SIZE = collections.namedtuple('InvalidSize', [])()
     zeit.cms.repository.interfaces.INonRecursiveCollection)
 class ImageGroupBase(object):
 
+    def __nonzero__(self):
+        return True
+
     zeit.cms.content.dav.mapProperties(
         zeit.content.image.interfaces.IImageGroup,
         IMAGE_NAMESPACE,
