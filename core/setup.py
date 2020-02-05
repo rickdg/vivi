@@ -37,6 +37,7 @@ setup(
         'gocept.form[formlib]>=0.7.5',
         'gocept.lxml>=0.2.1',
         'gocept.runner>0.5.3',
+        'google-cloud-datastore',
         'grokcore.component',
         'iso8601>=0.1.2',
         'lxml>=2.0.2',
