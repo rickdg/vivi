@@ -102,17 +102,19 @@ class CMSContent(Converter):
     grok.name(interface.__name__)
 
     def __call__(self):
+        body = zeit.retresco.interfaces.IBody(self.context)
         result = {
             'doc_id': zeit.cms.content.interfaces.IUUID(self.context).id,
             'url': self.context.uniqueId.replace(
                 zeit.cms.interfaces.ID_NAMESPACE, '/'),
             'doc_type': getattr(ITypeDeclaration(self.context, None),
                                 'type_identifier', 'unknown'),
-            'body': lxml.etree.tostring(
-                zeit.retresco.interfaces.IBody(self.context),
-                encoding='unicode'),
+            'body': lxml.etree.tostring(body, encoding='unicode'),
         }
         result['payload'] = self.collect_dav_properties()
+        if body.xpath('//recipelist'):
+            xpath = '//recipelist/ingredient/@code'
+            result['payload']['ingredients'] = body.xpath(xpath)
         return result
 
     DUMMY_ES_PROPERTIES = zeit.retresco.content.WebDAVProperties(None)

@@ -295,6 +295,15 @@ class ConvertTest(zeit.retresco.testing.FunctionalTestCase):
             'teaser': 'DSC00109_2.JPG',
         }, data)
 
+    def test_converts_recipe_ingredients(self):
+        recipe = zeit.cms.interfaces.ICMSContent(
+            'http://xml.zeit.de/online/rezept')
+        with checked_out(recipe):
+            pass
+        data = zeit.retresco.interfaces.ITMSRepresentation(recipe)()
+        ingredients = ['bandnudeln', 'brathaenchen']
+        self.assertEqual(ingredients, data['payload']['ingredients'])
+
     def test_converts_imagegroup(self):
         group = zeit.content.image.testing.create_image_group()
         with checked_out(group) as co:
