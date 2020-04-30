@@ -301,7 +301,7 @@ class ConvertTest(zeit.retresco.testing.FunctionalTestCase):
         with checked_out(recipe):
             pass
         data = zeit.retresco.interfaces.ITMSRepresentation(recipe)()
-        ingredients = ['bandnudeln', 'brathaenchen']
+        ingredients = ['bandnudeln', 'brathaenchen', 'bratwurst', 'senf']
         self.assertEqual(ingredients, data['payload']['ingredients'])
 
     def test_converts_imagegroup(self):
