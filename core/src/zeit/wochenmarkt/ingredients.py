@@ -60,7 +60,8 @@ class Ingredients(grok.GlobalUtility):
 
     @CONFIG_CACHE.cache_on_arguments()
     def _fetch(self):
-        config = zope.app.appsetup.product.getProductConfiguration('zeit.cms')
+        ns = 'zeit.wochenmarkt'
+        config = zope.app.appsetup.product.getProductConfiguration(ns)
         url = config.get('ingredients-url')
         log.info('Loading ingredients from %s', url)
         data = six.moves.urllib.request.urlopen(url)
