@@ -27,10 +27,13 @@ xpath_functions['lower'] = xpath_lowercase
 
 class Ingredient(object):
 
-    def __init__(self, id, name, category):
+    def __init__(self, id, **kwargs):
         self.id = id
-        self.name = name
-        self.category = category
+        self.name = kwargs.get('name')
+        self.category = kwargs.get('category')
+        self.tms = kwargs.get('tms', []).split(',')
+        self.singular = kwargs.get('singular')
+        self.plural = kwargs.get('plural')
         self.__name__ = self.name
 
 
@@ -74,8 +77,11 @@ class Ingredients(grok.GlobalUtility):
         for ingredient_node in xml.xpath('//ingredient'):
             ingredient = Ingredient(
                 ingredient_node.get('id'),
-                six.text_type(ingredient_node).strip(),
-                category=ingredient_node.getparent().tag)
+                name=six.text_type(ingredient_node).strip(),
+                category=ingredient_node.getparent().tag,
+                tms=ingredient_node.get('tms'),
+                singular=ingredient_node.get('singular'),
+                plural=ingredient_node.get('plural'))
             ingredients[ingredient_node.get('id')] = ingredient
         log.info('Ingredients loaded.')
         return ingredients
