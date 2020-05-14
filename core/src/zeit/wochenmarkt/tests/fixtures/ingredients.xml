@@ -1,35 +1,35 @@
 <?xml version="1.0" ?>
 <ingredients>
   <chicken>
-    <ingredient id="brathaenchen" related="Hühnchen,Hähnchen" singular="Brathähnchen" plural="Brathähnchen">Brathähnchen</ingredient>
-    <ingredient id="chicken-nuggets" related="Hühnchen,Hähnchen" singular="Chicken Nugget" plural="Chicken Nuggets">Chicken Nuggets</ingredient>
+    <ingredient id="brathaenchen" tms="Hühnchen,Hähnchen" singular="Brathähnchen" plural="Brathähnchen">Brathähnchen</ingredient>
+    <ingredient id="chicken-nuggets" tms="Hühnchen,Hähnchen" singular="Chicken Nugget" plural="Chicken Nuggets">Chicken Nuggets</ingredient>
   </chicken>
   <fish>
-    <ingredient id="calamari" related="Tintenfisch,Kalamar" singular="Calamari" plural="Calamari">Calamari</ingredient>
-    <ingredient id="crevetten" related="Krevetten,Garnelen,Garnele" singular="Crevette" plural="Crevetten">Crevetten</ingredient>
+    <ingredient id="calamari" tms="Tintenfisch,Kalamar" singular="Calamari" plural="Calamari">Calamari</ingredient>
+    <ingredient id="crevetten" tms="Krevetten,Garnelen,Garnele" singular="Crevette" plural="Crevetten">Crevetten</ingredient>
   </fish>
   <meat>
-    <ingredient id="bratenfond" related="Kraftbrühe,Fond" singular="Bratenfond" plural="Bratenfond">Bratenfond</ingredient>
-    <ingredient id="bratwurst" related="Grillwurst,Wurst" singular="Bratwurst" plural="Bratwürste">Bratwurst</ingredient>
+    <ingredient id="bratenfond" tms="Kraftbrühe,Fond" singular="Bratenfond" plural="Bratenfond">Bratenfond</ingredient>
+    <ingredient id="bratwurst" tms="Grillwurst,Wurst" singular="Bratwurst" plural="Bratwürste">Bratwurst</ingredient>
   </meat>
   <other>
-    <ingredient id="bandnudeln" related="Nudeln" singular="Bandnudel" plural="Bandnudeln">Bandnudeln</ingredient>
-    <ingredient id="basmatireis" related="Reis" singular="Basmatireis" plural="Basmatireis">Basmatireis</ingredient>
+    <ingredient id="bandnudeln" tms="Nudeln,Pasta" singular="Bandnudel" plural="Bandnudeln">Bandnudeln</ingredient>
+    <ingredient id="basmatireis" tms="Reis,Basmati" singular="Basmatireis" plural="Basmatireis">Basmatireis</ingredient>
   </other>
   <spices>
-    <ingredient id="muskatnuss" related="" singular="Muskatnuss" plural="Muskatnüsse">Muskatnuss</ingredient>
-    <ingredient id="natron" related="" singular="Natron" plural="Natron">Natron</ingredient>
+    <ingredient id="muskatnuss" tms="" singular="Muskatnuss,Muskat" plural="Muskatnüsse">Muskatnuss</ingredient>
+    <ingredient id="natron" tms="" singular="Natron" plural="Natron">Natron</ingredient>
   </spices>
   <vegetables>
-    <ingredient id="gurke" related="" singular="Gurke" plural="Gurken">Gurke</ingredient>
-    <ingredient id="tomate" related="" singular="Tomate" plural="Tomaten">Tomate</ingredient>
+    <ingredient id="gurke" tms="" singular="Gurke" plural="Gurken">Gurke</ingredient>
+    <ingredient id="tomate" tms="Tomate,Tomaten" singular="Tomate" plural="Tomaten">Tomate</ingredient>
   </vegetables>
   <poultry>
-    <ingredient id="haenchenkeule" related="Hühnchen,Hähnchen" singular="Hänchenkeule" plural="Hänchenkeulen">Hähnchenkeule</ingredient>
-    <ingredient id="truthahnbrust" related="Truthahn,Pute" singular="Truthahnbrust" plural="Truthahnbrüste">Truthahnbrust</ingredient>
+    <ingredient id="haenchenkeule" tms="Hühnchen,Hähnchen" singular="Hänchenkeule" plural="Hänchenkeulen">Hähnchenkeule</ingredient>
+    <ingredient id="truthahnbrust" tms="Truthahn,Pute" singular="Truthahnbrust" plural="Truthahnbrüste">Truthahnbrust</ingredient>
   </poultry>
   <fruits>
-    <ingredient id="physalis" related="" singular="Physalis" plural="Physalis">Physalis</ingredient>
-    <ingredient id="pomeranze" related="Bitterorange" singular="Pomeranze" plural="Pomeranzen">Pomeranze</ingredient>
+    <ingredient id="physalis" tms="Physalis" singular="Physalis" plural="Physalis">Physalis</ingredient>
+    <ingredient id="pomeranze" tms="Bitterorange,Pomeranze" singular="Pomeranze" plural="Pomeranzen">Pomeranze</ingredient>
   </fruits>
 </ingredients>
