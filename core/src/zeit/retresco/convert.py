@@ -112,9 +112,36 @@ class CMSContent(Converter):
             'body': lxml.etree.tostring(body, encoding='unicode'),
         }
         result['payload'] = self.collect_dav_properties()
+        if body.xpath('//categories'):
+            categories = body.xpath('//categories/category/@label')
+            result['payload'].update({'recipe': {'categories': categories}})
+
         if body.xpath('//recipelist'):
-            xpath = '//recipelist/ingredient/@code'
-            result['payload']['ingredients'] = body.xpath(xpath)
+            ingredients = body.xpath('//recipelist/ingredient/@label')
+            ids = body.xpath('//recipelist/ingredient/@code')
+            search_list = []
+            for id in ids:
+                try:
+                    item = zope.component.getUtility(
+                        zeit.wochenmarkt.interfaces.IIngredients).get(id).tms
+                    search_list = search_list + item
+                except AttributeError:
+                    pass
+            # recipelist should not be written to ES index, but will follow
+            names = body.xpath('//recipelist/name[@searchable="true"]/text()')
+            search_list = search_list + names
+            title = body.xpath('//title/text()')
+            search_list = search_list + title
+            if categories:
+                search_list = search_list + categories
+            else:
+                categories = []
+            result['payload'].update({
+                'recipe': {
+                    'autocomplete': search_list,
+                    'ingredients': ingredients,
+                    'categories': categories,
+                    'names': names}})
         return result
 
     DUMMY_ES_PROPERTIES = zeit.retresco.content.WebDAVProperties(None)
