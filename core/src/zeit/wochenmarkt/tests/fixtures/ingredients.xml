@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <ingredients>
-  <chicken>
+  <chicken tms="Hahn">
     <ingredient id="brathaenchen" tms="Hühnchen,Hähnchen" singular="Brathähnchen" plural="Brathähnchen">Brathähnchen</ingredient>
     <ingredient id="chicken-nuggets" tms="Hühnchen,Hähnchen" singular="Chicken Nugget" plural="Chicken Nuggets">Chicken Nuggets</ingredient>
   </chicken>
-  <fish>
+  <fish tms="Fisch, Meeresfrüchte">
     <ingredient id="calamari" tms="Tintenfisch,Kalamar" singular="Calamari" plural="Calamari">Calamari</ingredient>
     <ingredient id="crevetten" tms="Krevetten,Garnelen,Garnele" singular="Crevette" plural="Crevetten">Crevetten</ingredient>
   </fish>
