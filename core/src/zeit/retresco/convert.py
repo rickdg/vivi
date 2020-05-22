@@ -112,33 +112,43 @@ class CMSContent(Converter):
             'body': lxml.etree.tostring(body, encoding='unicode'),
         }
         result['payload'] = self.collect_dav_properties()
+        categories = []
         if body.xpath('//categories'):
             categories = body.xpath('//categories/category/@label')
             result['payload'].update({'recipe': {'categories': categories}})
 
         if body.xpath('//recipelist'):
-            ingredients = body.xpath('//recipelist/ingredient/@label')
-            ids = body.xpath('//recipelist/ingredient/@code')
+            ingredients = body.xpath('//recipelist/ingredient/@code')
             search_list = []
-            for id in ids:
+            for id in ingredients:
                 try:
-                    item = zope.component.getUtility(
+                    words = zope.component.getUtility(
                         zeit.wochenmarkt.interfaces.IIngredients).get(id).tms
-                    search_list = search_list + item
-                except AttributeError:
+                    if len(words) >= 1:
+                        words = [x + ':ingredient' for x in words]
+                        search_list = search_list + words
+                except AttributeError, zope.component.ComponentLookupError:
                     pass
-            # recipelist should not be written to ES index, but will follow
+
+            # recipelist name should not be written to ES index,
+            # but will follow soon
             names = body.xpath('//recipelist/name[@searchable="true"]/text()')
-            search_list = search_list + names
+            if len(names) >= 1:
+                names = [x + ':name' for x in names]
+                search_list = search_list + names
+
             title = body.xpath('//title/text()')
-            search_list = search_list + title
-            if categories:
+            if len(title) == 1 and title != '':
+                title[0] = title[0] + ':title'
+                search_list = search_list + title
+
+            if len(categories) >= 1:
+                category = [x + ':category' for x in categories]
                 search_list = search_list + categories
-            else:
-                categories = []
+
             result['payload'].update({
                 'recipe': {
-                    'autocomplete': search_list,
+                    'search': search_list,
                     'ingredients': ingredients,
                     'categories': categories,
                     'names': names}})
