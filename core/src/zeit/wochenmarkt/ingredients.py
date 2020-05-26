@@ -31,9 +31,10 @@ class Ingredient(object):
         self.id = id
         self.name = kwargs.get('name')
         self.category = kwargs.get('category')
-        self.tms = kwargs.get('tms').split(',') if kwargs.get('tms') else None
-        self.tms_category = (kwargs.get('tms_category').split(',')
-            if kwargs.get('tms_category') else None)
+        self.qwords = kwargs.get(
+            'qwords').split(',') if kwargs.get('qwords') else None
+        self.qwords_category = (kwargs.get('qwords_category').split(',')
+            if kwargs.get('qwords_category') else None)
         self.singular = kwargs.get('singular')
         self.plural = kwargs.get('plural')
         self.__name__ = self.name
@@ -81,8 +82,8 @@ class Ingredients(grok.GlobalUtility):
                 ingredient_node.get('id'),
                 name=six.text_type(ingredient_node).strip(),
                 category=ingredient_node.getparent().tag,
-                tms=ingredient_node.get('tms'),
-                tms_category=ingredient_node.getparent().get('tms'),
+                qwords=ingredient_node.get('q'),
+                qwords_category=ingredient_node.getparent().get('q'),
                 singular=ingredient_node.get('singular'),
                 plural=ingredient_node.get('plural'))
             ingredients[ingredient_node.get('id')] = ingredient

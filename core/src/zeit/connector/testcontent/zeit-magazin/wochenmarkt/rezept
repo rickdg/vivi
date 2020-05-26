@@ -1,0 +1,360 @@
+<article xmlns:py="http://codespeak.net/lxml/objectify/pytype">
+  <head>
+    <header/>
+    <author xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" hdok="" href="http://xml.zeit.de/autoren/B/Eva_Biringer" publication-date="" expires="">
+      <image base-id="http://xml.zeit.de/autoren/autorenbilder/eva-biringer-2/" type="png" publication-date="" expires="">
+        <bu xsi:nil="true"/>
+        <copyright py:pytype="str">© Privat</copyright>
+      </image>
+      <display_name py:pytype="str">Eva Biringer</display_name>
+    </author>
+    <image base-id="http://xml.zeit.de/zeit-magazin/essen-trinken/2016-06/italienische-kueche-foodblog-splendido-sonntagsessen-linguine/" type="jpg" title="Linguine con Ricotta, Pistacchi e Mandorle" publication-date="" expires="" title_local="Linguine con Ricotta, Pistacchi e Mandorle" caption_local="Linguine con Ricotta, Pistacchi e Mandorle">
+      <bu py:pytype="str">Linguine con Ricotta, Pistacchi e Mandorle</bu>
+      <copyright py:pytype="str">© Juri Gottschall</copyright>
+    </image>
+    <rankedTags>
+      <tag type="keyword" py:pytype="str">Kochrezept</tag>
+      <tag type="keyword" py:pytype="str">Coronavirus</tag>
+      <tag type="keyword" py:pytype="str">Quarantäne</tag>
+      <tag type="keyword" py:pytype="str">Social Distancing</tag>
+      <tag type="keyword" py:pytype="str">Rezept</tag>
+      <tag type="keyword" py:pytype="str">Mahlzeit</tag>
+      <tag type="keyword" py:pytype="str">kochen</tag>
+    </rankedTags>
+    <categories>
+      <category label="Wurstiges"/>
+      <category label="Pastagerichte"/>
+    </categories>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="DailyNL">yes</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="access">abo</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="artbox_thema">no</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="author">Eva Biringer</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="banner">yes</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="banner_content">yes</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="channels">zeit-magazin essen-trinken</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="comments">yes</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="comments_api_v2">no</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="comments_premoderate">no</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/workflow" name="corrected">yes</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="date-last-modified">2020-05-19T12:45:06.384089+00:00</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="date_first_released">2020-04-14T09:19:59.618155+00:00</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="date_last_checkout">2020-05-19T13:55:34.458425+00:00</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/workflow" name="date_last_published">2020-05-19T13:55:32.271882+00:00</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/workflow" name="date_last_published_semantic">2020-04-14T09:19:59.618155+00:00</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/workflow" name="edited">yes</attribute>
+    <attribute py:pytype="str" ns="http://apache.org/dav/props/" name="executable">F</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="genre">rezept-vorstellung</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="has_recensions">no</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="header_layout">leinwand</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="hide_adblocker_notification">no</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="hide_ligatus_recommendations">no</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="is_amp">no</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="is_instant_article">no</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="last-semantic-change">2020-04-14T09:19:57.550528+00:00</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="last_modified_by">zope.manager</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="lead_candidate">yes</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="overscrolling">yes</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="prevent_ligatus_indexing">no</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="previous_uniqueIds">http://xml.zeit.de/zeit-magazin/essen-trinken/2020-04/75c29e83-03eb-4a62-ab6f-00ca33e50926.tmp</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/workflow" name="product-id">ZEDE</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/vgwort" name="public_token">20a0364c062e421886b9a1a2e3382bf1</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/workflow" name="published">yes</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="recent_comments_first">no</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="ressort">zeit-magazin</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/workflow" name="seo_optimized">yes</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/workflow" name="short_text">Na, Lust auf was Herzhaftes nach all den Schokoeiern und Hefezöpfen?</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="show_commentthread">yes</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="sub_ressort">essen-trinken</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="template">article</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="text-length">6437</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="tldr_milestone">no</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/meta" name="type">article</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/workflow" name="urgent">no</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="uuid">{urn:uuid:16e82986-cdc0-492d-84e8-267d09b4ab53}</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="volume">16</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/document" name="year">2020</attribute>
+    <attribute py:pytype="str" ns="http://namespaces.zeit.de/CMS/meta" name="provides">&lt;pickle&gt;
+  &lt;initialized_object&gt;
+    &lt;klass&gt;
+      &lt;global name="Provides" module="zope.interface.declarations"/&gt;
+    &lt;/klass&gt;
+    &lt;arguments&gt;
+      &lt;tuple&gt;
+        &lt;global name="Article" module="zeit.content.article.article"/&gt;
+        &lt;global name="IZMOArticle" module="zeit.magazin.interfaces"/&gt;
+        &lt;global name="IZMOContent" module="zeit.magazin.interfaces"/&gt;
+        &lt;global name="Interface" module="zope.interface"/&gt;
+      &lt;/tuple&gt;
+    &lt;/arguments&gt;
+  &lt;/initialized_object&gt;
+&lt;/pickle&gt;</attribute>
+  </head>
+  <body>
+    <title>Vier Rezepte für eine Herdplatte</title>
+    <subtitle>Ist genug Brot und Kuchen gebacken, bleibt endlich wieder Zeit, zu kochen. Mit diesen One-Pot-Gerichten können Sie den Zuckerschock vom Osterwochenende kontern.</subtitle>
+    <division type="page">
+      <image base-id="http://xml.zeit.de/zeit-magazin/essen-trinken/2016-06/italienische-kueche-foodblog-splendido-sonntagsessen-linguine/" type="jpg" title="Linguine con Ricotta, Pistacchi e Mandorle" publication-date="" expires="" display_mode="column-width" variant_name="super" is_empty="False" caption_local=" Linguine mit Pistazien, Mandeln und Ricotta" title_local="Linguine mit Pistazien, Mandeln und Ricotta" alt_local="Linguine mit Pistazien, Mandeln und Ricotta">
+        <bu py:pytype="str">Linguine con Ricotta, Pistacchi e Mandorle</bu>
+        <copyright py:pytype="str">© Juri Gottschall</copyright>
+      </image>
+      <p>
+        <em>Keine Zeit zum Kochen? Das ist gerade keine Ausrede – wer viel zu
+Hause sein muss, hat auch Zeit, sich etwas zuzubereiten. Nur was? In der
+ Kochbuchsammlung sollte man sich jetzt vorsichtshalber nicht verlieren,
+ dann sieht man nur, was man alles nicht in der Vorratskammer hat. <a class="" href="https://www.zeit.de/zeit-magazin/essen-trinken/2020-04/arbeiterbrot-suesskartoffelbroetchen-knaeckebrot-kuerbisbrot" target="_blank">In
+dieser Serie</a> stellen wir deshalb schnelle Gerichte ohne kapriziöse
+Zutaten vor. Damit man sich zu Hause etwas Gutes tun kann.</em>
+      </p>
+      <p>Nicht jeder hat das Glück, einen eigenen Garten zu
+besitzen, in dem es sich in Zeiten des Social Distancing unbeschwert flanieren
+lässt. Einige haben auch keinen Balkon, viele keine Datscha, die allermeisten keinen
+Gutshof aus dem 19. Jahrhundert im Berliner Umland. Und manche haben nicht
+einmal einen Backofen. Mal angenommen, letztere scrollen dieser Tage durch
+ihren Instagram-Feed voller frisch gebackener Sauerteigbrote und Marmorkuchen
+und Zimtschnecken und Benjamin-Blümchen-Muffins – fühlen sie sich dann nicht
+ähnlich bestraft von der Welt wie sonst Daheimgebliebene beim Betrachten der
+Urlaubsfotos anderer Leute? Zum Glück gibt es Gerichte, für die es keinen Ofen
+braucht. Genau genommen reicht eine einzelne Herdplatte, dazu eine Pfanne oder
+einen Topf. Ein zusätzlicher Teller wäre gut, zur Not kann man aber sogar
+darauf verzichten und direkt aus dem Kochgeschirr essen, es schaut schließlich gerade
+keiner zu. <br/></p>
+      <intertitle>Rezept für
+Linguine mit Pistazien, Mandeln und Ricotta</intertitle>
+      <p>
+        <strong>Zutaten für 2-3
+Personen:</strong>
+      </p>
+      <ul>
+        <li>250 g Spaghetti</li>
+        <li>1 große Zwiebel </li>
+        <li>2 EL Olivenöl</li>
+        <li>1 Handvoll Pistazien</li>
+        <li>1 Handvoll Mandeln</li>
+        <li>250 g Büffelricotta</li>
+        <li>1-2 EL Milch</li>
+        <li>50 g Pecorino</li>
+      </ul>
+      <p>
+        <strong>Zubereitung: </strong>
+      </p>
+      <p>Zwiebel in möglichst
+feine Streifen reiben und bei niedriger Temperatur in Olivenöl garen, bis ein
+cremiger Sud entsteht.</p>
+      <p>
+Pistazien und geschälte Mandeln zu feinem Pulver zerstoßen und mit
+Büffelricotta, Milch, Pfeffer und Salz zu einem cremigen Brei verrühren.</p>
+      <p>
+Nudeln bis kurz vor al dente kochen. Mit etwas Kochwasser zu den geschmolzenen
+Zwiebeln geben, dann Ricotta-Nuss-Mischung unterrühren. Nochmals kurz erhitzen.</p>
+      <p>
+Mit weiterem Olivenöl und frisch geriebenem Pecorino bestreut servieren.</p>
+      <p>
+        <em>
+          <a class="" href="https://splendido-magazin.de/linguine-pistazien-mandeln-ricotta" target="_blank">Rezept von Splendido Magazin</a>
+        </em>
+        <br/>
+      </p>
+    </division>
+    <supertitle>Linguine mit Pistazien, Mandeln und Ricotta</supertitle>
+    <division type="page" teaser="Pancakes mit Tintenfisch und Kimchi">
+      <image base-id="http://xml.zeit.de/zeit-magazin/essen-trinken/2016-10/pancakes/" type="jpg" title="Pancakes mit Tintenfisch und Kimchi" alt="Pancakes mit Tintenfisch und Kimchi" publication-date="" expires="" set-manually="True" display_mode="column-width" variant_name="wide" is_empty="False" title_local="Pancakes mit Tintenfisch und Kimchi" caption_local=" Pancakes mit Tintenfisch und Kimchi" alt_local="Pancakes mit Tintenfisch und Kimchi">
+        <bu py:pytype="str">Pancakes mit Tintenfisch und Kimchi</bu>
+        <copyright py:pytype="str">© Der ultimative Kochblog</copyright>
+      </image>
+      <intertitle>Rezept für
+Pancakes mit Tintenfisch und Kimchi</intertitle>
+      <p>
+        <strong>Zutaten für 2
+Personen:</strong>
+      </p>
+      <ul>
+        <li>300 g Tintenfisch,
+gesäubert</li>
+        <li>1 EL Zitronensaft</li>
+        <li>300 g Kimchi, grob
+gehackt</li>
+        <li>1 rote Chilischote,
+in feine Scheiben geschnitten</li>
+        <li>4 Frühlingszwiebeln,
+in feine Röllchen geschnitten</li>
+        <li>200 g Mehl</li>
+        <li>1 EL geröstetes
+Sesamöl</li>
+        <li>1 Ei</li>
+        <li>6 EL Sojasauce </li>
+        <li>Pflanzenöl zum
+Anbraten</li>
+      </ul>
+      <p>
+        <strong>Zubereitung:</strong>
+      </p>
+      <p>Tintenfische mit
+Zitronensaft 2 bis 3 Minuten in kochendes Wasser geben, herausnehmen und
+abtrocknen. Körper grob hacken. Beinchen im Ganzen in Pflanzenöl 2 bis 3
+Minuten knusprig braten. <br/></p>
+      <p>
+Für die Pancakes Tintenfischringe, Kimchi, drei Viertel der Chilischote, drei
+Viertel der Frühlingszwiebeln, Mehl, geröstetes Sesamöl und Ei gut miteinander
+verrühren. <br/></p>
+      <p>
+Jeweils 3 Esslöffel Teig pro Pancake in eine mit Pflanzenöl gefettete Pfanne geben
+und 2 Minuten von jeder Seite goldbraun braten.</p>
+      <p>
+Sojasauce mit restlichen Frühlingszwiebeln und Chili vermischen. Zusammen mit
+Pancakes und Tintenfischbeinchen servieren.</p>
+      <p>
+        <em>
+          <a class="" href="https://derultimativekochblog.com/2016/03/aus-unserem-kochbuch-mampf-pancakes-mit-tintenfisch-kimchi-koreanisch/" target="_blank"> Rezept von Der ultimative Kochblog</a>
+        </em>
+        <br/>
+      </p>
+    </division>
+    <division type="page" teaser="Schwedischer Wursttopf">
+      <image src="http://xml.zeit.de/zeit-magazin/essen-trinken/2016-03/sonntagsessen-gourmetguerilla-wurstpfanne/sonntagsessen-gourmetguerilla-wurstpfanne-zmo-large.jpg" type="jpg" alt="Schwedische Wurstpfanne mit Brokkoli" publication-date="" expires="" set-manually="True" display_mode="column-width" variant_name="wide" is_empty="False" caption_local=" Schwedische Wurstpfanne mit Brokkoli" alt_local="Schwedische Wurstpfanne mit Brokkoli">
+        <bu py:pytype="str">Schwedische Wurstpfanne mit Brokkoli</bu>
+        <copyright py:pytype="str">© Melanie Buml</copyright>
+      </image>
+      <intertitle>Rezept für
+schwedischen Wursttopf</intertitle>
+      <p>
+        <strong>Zutaten für 4
+Personen:</strong>
+      </p>
+      <ul>
+        <li>800 g Sellerie </li>
+        <li>2-3 EL Butter oder
+Kokosöl</li>
+        <li>2 Zwiebeln, gehackt</li>
+        <li>2 Knoblauchzehen,
+gehackt</li>
+        <li>500 g Wurst </li>
+        <li>2 TL Paprikapulver edelsüß</li>
+        <li>150 g passierte Tomaten</li>
+        <li>1 EL Tomatenmark</li>
+        <li>200 ml Sahne</li>
+        <li>100 ml Milch</li>
+        <li>2 EL weißer Essig</li>
+        <li>Salz</li>
+        <li>schwarzer Pfeffer</li>
+      </ul>
+      <p>
+        <strong>Zubereitung:</strong>
+      </p>
+      <p>Sellerie schälen und
+in einen Zentimeter breite Würfel schneiden. Butter oder Kokosöl in einem großen
+Topf erhitzen und Selleriewürfel darin rundherum anbraten. <br/></p>
+      <p>
+Wurst in Scheiben schneiden und mit Zwiebel, Knoblauch und Paprika in den Topf
+geben. Gut umrühren und ein paar Minuten braten, bis die Wurst leicht gebräunt
+ist.</p>
+      <p>
+Passierte Tomaten, Tomatenmark, Sahne, Milch und Essig angießen, umrühren und 5
+Minuten köcheln lassen, bis die Sauce cremig ist. Mit Salz und Pfeffer
+abschmecken und mit gehacktem Schnittlauch bestreut servieren.</p>
+      <p>
+Als Beilage passt gedämpfter Brokkoli.</p>
+      <p>
+        <em>
+          <a class="" href="http://www.gourmetguerilla.de/2016/02/lchf-rezept-schwedischer-wursttopf-schmeckt-wie-sommerferien-auf-dem-teller/" target="_blank">Rezept von Gourmet Guerilla</a>
+        </em>
+        <br/>
+      </p>
+    </division>
+    <division type="page" teaser="Zwetschgenmustaschen mit Haselnussbröseln">
+      <image src="http://xml.zeit.de/zeit-magazin/essen-trinken/2016-03/sonntagsessen-compliment-to-the-chef-powidl/sonntagsessen-compliment-to-the-chef-powidl-zmo-large.jpg" type="jpg" alt="Powidltascherl mit Haselnussbröseln" publication-date="" expires="" set-manually="True" display_mode="column-width" variant_name="wide" is_empty="False" caption_local=" Zwetschgenmustaschen mit Haselnussbröseln" alt_local="Zwetschgenmustaschen mit Haselnussbrösel">
+        <bu py:pytype="str">Powidltascherl mit Haselnussbröseln</bu>
+        <copyright py:pytype="str">© Sonja Planeta</copyright>
+      </image>
+      <intertitle>Rezept für
+Zwetschgenmustaschen mit Haselnussbrösel</intertitle>
+      <p>
+        <strong>Zutaten für 16-18
+Stück:</strong>
+      </p>
+      <ul>
+        <li>1 kg Zwetschgen, ergibt
+ca. 250 g Mus</li>
+        <li>250 g (am besten am
+Vortag) gekochte Kartoffeln, geschält</li>
+        <li>25 g Butter</li>
+        <li>100 g Mehl</li>
+        <li>25 g Grieß</li>
+        <li>1 Eigelb</li>
+        <li>1 Prise Salz</li>
+        <li>150 g Zwetschgenmus</li>
+        <li>1 EL Rum</li>
+        <li>10 g
+Feinkristallzucker</li>
+        <li>½ TL Zimt</li>
+        <li>1 Ei</li>
+      </ul>
+      <p>
+        <strong>Außerdem:</strong>
+      </p>
+      <ul>
+        <li>40 g Butter</li>
+        <li>80 g Semmelbrösel</li>
+        <li>20 g geriebene
+Haselnüsse</li>
+        <li>Puderzucker</li>
+      </ul>
+      <p>
+        <strong>Zubereitung:</strong>
+      </p>
+      <p>Für das
+Zwetschgenmus am Vortag Zwetschgen in grobe Stücke schneiden und in einem Topf
+pürieren. Aufkochen und bei geringer Hitze ohne Deckel köcheln lassen, dabei
+regelmäßig umrühren, damit das Mus nicht anbrennt. So lange unter Rühren
+weiterkochen, bis aus den Zwetschgen eine dunkle, zähe, an der Oberfläche
+glänzende Paste geworden ist. Heiß in ein steriles Glas füllen, gut
+verschließen und bis zur weiteren Verwendung dunkel und trocken lagern.</p>
+      <p>
+Für den Teig gekochte Kartoffeln durch eine Kartoffelpresse drücken oder mit
+einem Stampfer fein zerdrücken. Mit Butter, Mehl, Grieß, Eigelb und Salz zu
+einem homogenen Teig verkneten. Zu einer Kugel formen, in Frischhaltefolie
+wickeln und kurz im Kühlschrank ruhen lassen.</p>
+      <rawtext>
+        <text_reference type="intern" href="http://xml.zeit.de/embed/newsletter-signup/mailjet/rezepte-newsletter-signup" publication-date="" expires=""/>
+      </rawtext>
+      <recipelist>
+        <name searchable="true">Wurst-Hähnchen</name>
+        <ingredient amount="500" code="bratwurst" label="Bratwurst" unit="g"/>
+        <ingredient amount="200" code="brathaenchen" label="Brathähnchen" unit="g"/>
+      </recipelist>
+      <recipelist>
+        <name searchable="false">Tomaten-Grieß</name>
+        <ingredient amount="500" code="gries" label="Gries" unit="g"/>
+        <ingredient amount="200" code="tomate" label="Tomate" unit="g"/>
+        <ingredient amount="200" code="gurke" label="Gurke" unit="g"/>
+      </recipelist>
+      <p>
+Für die Füllung Zwetschgenmus mit Rum, Zimt und Zucker glattrühren.
+Kartoffelteig 5 Millimeter dick ausrollen und mit einem Ravioliausstecher oder
+mit einem Glas Kreise von 8 Zentimeter Durchmesser ausstechen. In die Mitte
+jedes Kreises einen guten Teelöffel Zwetschgenmus setzen, die Ränder mit ein wenig
+verquirltem Ei bepinseln und die Taschen zusammenklappen. Wer keinen Ausstecher
+hat, drückt die Ränder einfach mit den Zinken einer Gabel fest. <br/></p>
+      <p>
+In einem mit leicht gesalzenem, kochendem Wasser gefüllten Topf einmal kurz aufkochen,
+dann 6 Minuten leicht wallend ziehen lassen.</p>
+      <p>
+In einer großen, flachen Pfanne Butter schmelzen und die Semmel- und
+Haselnussbrösel einrühren. Bei mittlerer Hitze vorsichtig goldbraun rösten. <br/></p>
+      <p>
+Nach Ablauf der Kochzeit Zwetschgenmustaschen aus dem Wasser heben, abtropfen
+lassen und in den Haselnussbröseln schwenken. Mit Puderzucker bestäubt
+servieren.</p>
+      <p>
+        <em>
+          <a class="" href="https://www.complimenttothechef.com/powidltascherl-mit-haselnussbroesel/" target="_blank">Rezept von Compliment to the Chef</a>
+        </em>
+        <br/>
+      </p>
+    </division>
+  </body>
+  <teaser>
+    <title>Vier Rezepte für eine Herdplatte</title>
+    <text>Ist genug Brot und Kuchen gebacken, bleibt endlich wieder Zeit, zu kochen. Mit diesen One-Pot-Gerichten können Sie den Zuckerschock vom Osterwochenende kontern.</text>
+    <supertitle>Linguine mit Pistazien, Mandeln und Ricotta</supertitle>
+  </teaser>
+</article>

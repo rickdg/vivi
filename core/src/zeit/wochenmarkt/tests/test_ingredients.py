@@ -14,8 +14,8 @@ class TestIngredients(zeit.wochenmarkt.testing.FunctionalTestCase):
         basmati = dict(ingredients.items()).get('basmatireis')
         assert 'Basmatireis' == basmati.name
         assert 'other' == basmati.category
-        assert ['Reis', 'Basmati'] == basmati.tms
-        assert basmati.tms_category is None
+        assert ['Reis', 'Basmati'] == basmati.qwords
+        assert basmati.qwords_category is None
         assert 'Basmatireis' == basmati.singular
         assert 'Basmatireis' == basmati.plural
 
@@ -24,8 +24,8 @@ class TestIngredients(zeit.wochenmarkt.testing.FunctionalTestCase):
             zeit.wochenmarkt.interfaces.IIngredients).get('calamari')
         assert 'Calamari' == calamari.name
         assert 'fish' == calamari.category
-        assert ['Tintenfisch', 'Kalamar'] == calamari.tms
-        assert ['Fisch', ' Meeresfrüchte'] == calamari.tms_category
+        assert ['Tintenfisch', 'Kalamar'] == calamari.qwords
+        assert ['Fisch', ' Meeresfrüchte'] == calamari.qwords_category
 
     def test_ingredients_should_be_found_by_category(self):
         meat_ingredients = zope.component.getUtility(
