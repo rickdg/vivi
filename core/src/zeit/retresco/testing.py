@@ -11,6 +11,7 @@ import zeit.content.article.testing
 import zeit.content.link.testing
 import zeit.content.volume.testing
 import zeit.find.testing
+import zeit.wochenmarkt.testing
 import zope.app.appsetup.product
 
 
@@ -44,7 +45,8 @@ CONFIG_LAYER = ProductConfigLayer(product_config, bases=(
     HTTP_LAYER,
     zeit.content.article.testing.CONFIG_LAYER,
     zeit.content.link.testing.CONFIG_LAYER,
-    zeit.content.volume.testing.CONFIG_LAYER))
+    zeit.content.volume.testing.CONFIG_LAYER,
+    zeit.wochenmarkt.testing.CONFIG_LAYER))
 
 
 class ElasticsearchMockLayer(plone.testing.Layer):
