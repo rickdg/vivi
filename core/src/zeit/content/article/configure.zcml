@@ -59,6 +59,16 @@
     <require like_class="zeit.cms.content.reference.EmptyReference" />
   </class>
 
+  <!-- Remote information -->
+  <class class="zeit.content.article.remote_information.RemoteInformaton">
+    <require
+      interface="zeit.content.article.interfaces.IRemoteInformation"
+      permission="zope.View" />
+    <require
+      set_schema="zeit.content.article.interfaces.IRemoteInformation"
+      permission="zeit.EditContent" />
+  </class>
+
 
    <!-- recensions -->
 

@@ -269,3 +269,17 @@ class IErrorPage(IArticle):
 
     This interface is applied manually.
     """
+
+
+class IRemoteInformation(IArticle):
+    """Information stored remotely and accessed via link"""
+
+    remote_timestamp = zope.schema.TextLine(
+        title=_('Remote timestamp'),
+        required=False
+        )
+
+    remote_image = zope.schema.TextLine(
+        title=_('Remote image'),
+        required=False
+        )
