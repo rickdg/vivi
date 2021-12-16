@@ -241,7 +241,9 @@ class PublishRetractTask(object):
 
             # Dive into folders
             if zeit.cms.repository.interfaces.ICollection.providedBy(new_obj):
-                stack.extend(new_obj.values())
+                deps = zeit.workflow.interfaces.IPublicationDependencies(
+                    new_obj).get_dependencies()
+                stack.extend(deps)
                 timer.mark('Recursed into %s' % (new_obj.uniqueId,))
 
             # Dive into dependent objects
