@@ -247,6 +247,17 @@ class TestDynamicFolder(
             self.repository['brokenfolder'].values()
 
 
+class PublishDynamicFolder(zeit.content.dynamicfolder.testing.BrowserTestCase):
+
+    login_as = 'zmgr:mgrpw'
+
+    def test_publish_dynamic_folder_by_button(self):
+        browser = self.wsgiBrowser()
+        browser.open(
+            'http://localhost/repository/dynamicfolder/@@publish.html')
+        self.assertEllipsis('...error...', browser.contents)
+
+
 class MaterializeDynamicFolder(
         zeit.cms.testing.FunctionalTestCase):
 
