@@ -326,7 +326,7 @@ class ITickarooLiveblog(zeit.edit.interfaces.IBlock):
     intersection_type = zope.schema.Choice(
         title=_('Intersections'),
         source=LiveblogSource('*//intersection_type'),
-        default='chapter',
+        default='date',
         required=True)
 
 
